@@ -28,12 +28,14 @@
       font-family: 'Inter';
     }
 
-    img {
+    .hover-content {
       display: none;
     }
 
-    img:hover {
-      display: inline;
+    .parent:hover .hover-content {
+      display: flex;
+      justify-items: center;
+      align-items: center;
     }
   </style>
 </head>
@@ -124,14 +126,23 @@
       <td>
         <div class="flex justify-start items-center">
           <div class="mr-[0.375rem] font-medium">
-            <p class="">Custom Integration</p>
+            <p>Custom Integration</p>
           </div>
-          <div class='mr-[0.375rem] '>
+          <div class='mr-[0.375rem]'>
             <img src="Assets/SubTask.svg"></img>
           </div>
           <div class='mr-[0.375rem]'>
-            <p class="text-[#475569] text-[0.875rem] hide hoverEffect">0</p>
+            <p class="text-[#475569] text-[0.875rem] ">0</p>
           </div>
+          <!-- <div class="mr-[0.375rem] font-medium flex justify-start items-center">Custom Integration
+          <div class="">
+            <div class='ml-[0.375rem]'>
+              <img src="Assets/SubTask.svg"></img>
+            </div>
+            <div class='ml-[0.375rem]'>
+              <p class="text-[#475569] text-[0.875rem] ">0</p>
+            </div>
+          </div> -->
           <!-- <div class='mr-[0.375rem]'>|</div>
           <div>
             <img src="Assets/PlusSign.svg"></img>
@@ -151,23 +162,13 @@
           </div>
         </div>
       </td>
-      <!-- 
-      <li class="flex justify-center items-center">
-        <div class="mr-[0.25rem]"><img src="Assets/Ellipse2.svg" alt=""></div>
-        <div class="mr-[0.406rem]">To Do</div>
-        <div><img src="Assets/ArrowDown.svg" alt=""></div>
-      </li> -->
       <td>
-        <div class='flex justify-center items-center uppercase'>
-          <select class="border-none">
-            <option value="">
-              <li class="flex justify-center items-center">
-                <div class="mr-[0.25rem]"><img src="Assets/Ellipse2.svg" alt=""></div>
-                <div class="mr-[0.406rem]">To Do</div>
-                <div><img src="Assets/ArrowDown.svg" alt=""></div>
-              </li>
+        <div class='flex justify-center items-center'>
+          <select class="">
+            <option data-icon="Assets/circle.svg"> In review</option>
+            <option>To Do</option>
+            <option>Done</option>
           </select>
-          </ul>
         </div>
       </td>
       <td>
@@ -193,7 +194,7 @@
       </td>
     </tr>
     <tr class="bg-[#F8FAFC] border-b border-[#E2E8F0] py-[0.75rem]
-    px-[1.25rem]">
+    px-[1.25rem] parent">
       <td>
         <div class='flex justify-center items-center'>
           <div class="ml-[0.958rem]">
@@ -222,14 +223,14 @@
           <div class='mr-[0.375rem]'>
             <p class="text-[#475569] text-[0.875rem]">1</p>
           </div>
-          <div class='mr-[0.375rem] text-[#475569] text-[0.875rem]'>|</div>
-          <div>
+          <div class='mr-[0.375rem] text-[#475569] text-[0.875rem] hover-content'>|</div>
+          <div class="hover-content">
             <img src="Assets/PlusSign.svg"></img>
           </div>
-          <div class='ml-[0.917rem]'>
+          <div class='ml-[0.917rem] hover-content'>
             <img src="Assets/Frame83.svg"></img>
           </div>
-          <div class="ml-[0.5rem]">
+          <div class="ml-[0.5rem] hover-content">
             <img src="Assets/Frame85.svg"></img>
           </div>
         </div>
@@ -297,7 +298,9 @@
           <div class="mr-[0.375rem]">
             <p class="">
             <div class="">
-              <p class="w-[29rem]">As a new Certified ScrumMaster, once my name has been loaded to the registry I am
+              <p class="w-[29rem] ml-[2.313rem]">As a new Certified ScrumMaster, once my name has been loaded to the
+                registry I
+                am
                 sent an email welcoming me to the Scrum Alliance and containing instructions on how to register/activate
                 my membership
               </p>
@@ -365,24 +368,24 @@
         </div>
       </td>
       <td>
-        <div class="flex justify-start items-center">
+        <div class="flex justify-start items-center parent">
           <div class="mr-[0.375rem] font-medium">
-            <p class="">Custom Integration</p>
+            <p>Custom Integration</p>
           </div>
           <div class='mr-[0.375rem]'>
             <img src="Assets/SubTask.svg"></img>
           </div>
           <div class='mr-[0.375rem]'>
-            <p class="text-[#475569] text-[0.875rem]">1</p>
+            <p class="text-[#475569] text-[0.875rem]">3</p>
           </div>
-          <div class='mr-[0.375rem] text-[#475569] text-[0.875rem]'>|</div>
-          <div>
+          <div class='mr-[0.375rem] text-[#475569] text-[0.875rem] hover-content'>|</div>
+          <div class="hover-content">
             <img src="Assets/PlusSign.svg"></img>
           </div>
-          <div class='ml-[0.917rem]'>
+          <div class='ml-[0.917rem] hover-content'>
             <img src="Assets/Frame83.svg"></img>
           </div>
-          <div class="ml-[0.5rem]">
+          <div class="ml-[0.5rem] hover-content">
             <img src="Assets/Frame85.svg"></img>
           </div>
         </div>
@@ -397,9 +400,7 @@
       <td>
         <div class='flex justify-center items-center'>
           <select>
-            <option>
-              <div>In review</div>
-            </option>
+            <option>In review</option>
             <option>To Do</option>
             <option>Done</option>
           </select>
@@ -450,7 +451,8 @@
           <div class="mr-[0.375rem]">
             <p class="">
             <div class="">
-              <p class="w-[29rem]">As a new Certified ScrumMaster, once my name has been loaded to the registry I am
+              <p class="w-[29rem] ml-[2.313rem]">As a new Certified ScrumMaster, once my name has been loaded to the
+                registry I am
                 sent an email welcoming me to the Scrum Alliance and containing instructions on how to register/activate
                 my membership
               </p>
@@ -522,7 +524,8 @@
           <div class="mr-[0.375rem]">
             <p class="">
             <div class="">
-              <p class="w-[29rem]">As a new Certified ScrumMaster, once my name has been loaded to the registry I am
+              <p class="w-[29rem] ml-[2.313rem]">As a new Certified ScrumMaster, once my name has been loaded to the
+                registry I am
                 sent an email welcoming me to the Scrum Alliance and containing instructions on how to register/activate
                 my membership
               </p>
@@ -594,7 +597,8 @@
           <div class="mr-[0.375rem]">
             <p class="">
             <div class="">
-              <p class="w-[29rem]">As a new Certified ScrumMaster, once my name has been loaded to the registry I am
+              <p class="w-[29rem] ml-[2.313rem]">As a new Certified ScrumMaster, once my name has been loaded to the
+                registry I am
                 sent an email welcoming me to the Scrum Alliance and containing instructions on how to register/activate
                 my membership
               </p>
