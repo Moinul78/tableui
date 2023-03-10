@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Table</title>
+
+  <style>
+    table {
+      width: 100%;
+
+    }
+
+    td,
+    th {
+      padding: 1px;
+    }
+
+    body {
+      font-family: 'Inter';
+    }
+
+    img {
+      display: none;
+    }
+
+    img:hover {
+      display: inline;
+    }
+  </style>
+</head>
+
+<body class="">
+  <table>
+    <tr class="tablehead uppercase font-semibold text-[#64748B] text-[0.688rem] p-[0.625rem]">
+      <th class="">
+        <div class='flex justify-center items-center '>
+          <div class="ml-[0.558rem]">
+            <img src="Assets/circle.svg"></img>
+          </div>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/ArrowRight.svg"></img> -->
+          </div>
+        </div>
+      </th>
+      <th>
+        <div class="flex justify-end">
+          <span class="mr-[0.91rem]">Type</span>
+          <img src="Assets/arrow.svg"></img>
+        </div>
+      </th>
+
+      <th class="flex justify-start">
+        <div class="flex">
+          <span class="mr-[0.891rem] ">Summary</span>
+          <img src="Assets/arrow.svg"></img>
+        </div>
+      </th>
+      <th>
+        <div class="flex justify-end">
+          <span class="mr-[0.891rem] ">Assignee</span>
+          <img src="Assets/arrow.svg"></img>
+        </div>
+      </th>
+      <th>
+        <div class="flex justify-center">
+          <span class="mr-[0.891rem] ">Status</span>
+          <img src="Assets/arrow.svg"></img>
+        </div>
+      </th>
+      <th>
+        <div class="flex justify-end">
+          <span class="mr-[0.891rem] ">Due</span>
+          <img src="Assets/arrow.svg"></img>
+        </div>
+      </th>
+      <th>
+        <div class="flex justify-end">
+          <span class="mr-[0.891rem] ">Estimate</span>
+          <img src="Assets/arrow.svg"></img>
+        </div>
+      </th>
+      <th>
+        <div class="flex justify-end">
+          <span class="mr-[0.891rem] ">Sprint Point</span>
+          <img src="Assets/arrow.svg"></img>
+        </div>
+      </th>
+      <th>
+        <div class="flex justify-end">
+          <span class="mr-[0.891rem] ">Priority</span>
+          <img src="Assets/arrow.svg"></img>
+        </div>
+      </th>
+    </tr>
+    <tr class="bg-[#FFFFFF] border-b border-[#E2E8F0] py-[0.75rem]
+    px-[1.25rem]">
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/circle.svg"></img> -->
+          </div>
+          <div class="ml-[0.958rem] justify-end">
+            <img src="Assets/ArrowRight.svg"></img>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <img src="Assets/IssueTypes.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-start items-center">
+          <div class="mr-[0.375rem] font-medium">
+            <p class="">Custom Integration</p>
+          </div>
+          <div class='mr-[0.375rem] '>
+            <img src="Assets/SubTask.svg"></img>
+          </div>
+          <div class='mr-[0.375rem]'>
+            <p class="text-[#475569] text-[0.875rem] hide hoverEffect">0</p>
+          </div>
+          <!-- <div class='mr-[0.375rem]'>|</div>
+          <div>
+            <img src="Assets/PlusSign.svg"></img>
+          </div>
+          <div class='ml-[0.917rem]'>
+            <img src="Assets/Frame83.svg"></img>
+          </div>
+          <div class="ml-[0.5rem]">
+            <img src="Assets/Frame85.svg"></img>
+          </div>
+        </div> -->
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class="w-[2rem] h-[2rem]">
+            <img src="Assets/AddUser.svg"></img>
+          </div>
+        </div>
+      </td>
+      <!-- 
+      <li class="flex justify-center items-center">
+        <div class="mr-[0.25rem]"><img src="Assets/Ellipse2.svg" alt=""></div>
+        <div class="mr-[0.406rem]">To Do</div>
+        <div><img src="Assets/ArrowDown.svg" alt=""></div>
+      </li> -->
+      <td>
+        <div class='flex justify-center items-center uppercase'>
+          <select class="border-none">
+            <option value="">
+              <li class="flex justify-center items-center">
+                <div class="mr-[0.25rem]"><img src="Assets/Ellipse2.svg" alt=""></div>
+                <div class="mr-[0.406rem]">To Do</div>
+                <div><img src="Assets/ArrowDown.svg" alt=""></div>
+              </li>
+          </select>
+          </ul>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="text-[#475569] text-[0.875rem]">
+            <p>Mar 15</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center"> <img src="Assets//TimeSchedule.svg"></img></div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class='mr-[0.25rem]'>
+            <img src="Assets/StarCircle.svg"></img>
+          </div>
+          <div class="text-[#475569] text-[0.875rem]">5</div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center"> <img src="Assets/flag1.svg"></img></div>
+      </td>
+    </tr>
+    <tr class="bg-[#F8FAFC] border-b border-[#E2E8F0] py-[0.75rem]
+    px-[1.25rem]">
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="ml-[0.958rem]">
+            <img src="Assets/circle.svg"></img>
+          </div>
+          <div class="">
+            <img src="Assets/DragIcon.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <img src="Assets/IssueTypes.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-start items-center">
+          <div class="mr-[0.375rem] font-medium">
+            <p>Custom Integration</p>
+          </div>
+          <div class='mr-[0.375rem]'>
+            <img src="Assets/SubTask.svg"></img>
+          </div>
+          <div class='mr-[0.375rem]'>
+            <p class="text-[#475569] text-[0.875rem]">1</p>
+          </div>
+          <div class='mr-[0.375rem] text-[#475569] text-[0.875rem]'>|</div>
+          <div>
+            <img src="Assets/PlusSign.svg"></img>
+          </div>
+          <div class='ml-[0.917rem]'>
+            <img src="Assets/Frame83.svg"></img>
+          </div>
+          <div class="ml-[0.5rem]">
+            <img src="Assets/Frame85.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class="w-[2rem] h-[2rem]">
+            <img src="Assets/UserAssignee.png"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class=' flex justify-center items-center'>
+          <select>
+            <option>
+              <div>In review</div>
+            </option>
+            <option>To Do</option>
+            <option>Done</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <p class="text-[#475569] text-[0.875rem]">Mar 15</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center"> <img src="Assets/TimeSchedule.svg"></img></div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class='mr-[0.25rem]'>
+            <img src="Assets/StarCircle.svg"></img>
+          </div>
+          <div class="text-[#475569] text-[0.875rem]">5</div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center"> <img src="Assets/flagRed.svg"></img></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class='flex justify-center '>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/circle.svg"></img> -->
+          </div>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/ArrowRight.svg"></img> -->
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <img src="Assets/IssueTypesRed.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td class="text-[#475569] font-normal text-[0.875rem]">
+        <div class="flex justify-start items-center">
+          <div class="mr-[0.375rem]">
+            <p class="">
+            <div class="">
+              <p class="w-[29rem]">As a new Certified ScrumMaster, once my name has been loaded to the registry I am
+                sent an email welcoming me to the Scrum Alliance and containing instructions on how to register/activate
+                my membership
+              </p>
+            </div>
+            </p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class="w-[2rem] h-[2rem]">
+            <img src="Assets/UserAssignee1.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class=' flex justify-center items-center'>
+          <select>
+            <option>
+              <div>In review</div>
+            </option>
+            <option>To Do</option>
+            <option>Done</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <p class="text-[#475569] text-[0.875rem]">Mar 15</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center"> <img src="Assets//TimeSchedule.svg"></img></div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class='mr-[0.25rem]'>
+            <img src="Assets/StarCircle.svg"></img>
+          </div>
+          <div class="text-[#475569] text-[0.875rem]">5</div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center"> <img src="Assets/flagWhite.svg"></img></div>
+      </td>
+    </tr>
+    <tr class="bg-[#6239ed0d] border-b border-[#E2E8F0] py-[0.75rem] px-[1.25rem]">
+      <td>
+        <div class='flex justify-center '>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/circle.svg"></img> -->
+          </div>
+          <div class="ml-[0.958rem]">
+            <img src="Assets/ArrowDown.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <img src="Assets/IssueTypes.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-start items-center">
+          <div class="mr-[0.375rem] font-medium">
+            <p class="">Custom Integration</p>
+          </div>
+          <div class='mr-[0.375rem]'>
+            <img src="Assets/SubTask.svg"></img>
+          </div>
+          <div class='mr-[0.375rem]'>
+            <p class="text-[#475569] text-[0.875rem]">1</p>
+          </div>
+          <div class='mr-[0.375rem] text-[#475569] text-[0.875rem]'>|</div>
+          <div>
+            <img src="Assets/PlusSign.svg"></img>
+          </div>
+          <div class='ml-[0.917rem]'>
+            <img src="Assets/Frame83.svg"></img>
+          </div>
+          <div class="ml-[0.5rem]">
+            <img src="Assets/Frame85.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class="w-[2rem] h-[2rem]">
+            <img src="Assets/AddUser.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <select>
+            <option>
+              <div>In review</div>
+            </option>
+            <option>To Do</option>
+            <option>Done</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <p class="text-[#475569] text-[0.875rem]">Mar 15</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center"> <img src="Assets//TimeSchedule.svg"></img></div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class='mr-[0.25rem]'>
+            <img src="Assets//StarCircle.svg"></img>
+          </div>
+          <div class="text-[#475569] text-[0.875rem]">5</div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center"> <img src="Assets/flagRed.svg"></img></div>
+      </td>
+    </tr>
+    <tr class="bg-[#FFFFFF] border-b border-[#E2E8F0] py-[0.75rem] px-[1.25rem]">
+      <td>
+        <div class='flex justify-center '>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/circle.svg"></img> -->
+          </div>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/ArrowRight.svg"></img> -->
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <img src="Assets/IssueTypesRed.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td class="text-[#475569] font-normal text-[0.875rem]">
+        <div class="flex justify-start items-center">
+          <div class="mr-[0.375rem]">
+            <p class="">
+            <div class="">
+              <p class="w-[29rem]">As a new Certified ScrumMaster, once my name has been loaded to the registry I am
+                sent an email welcoming me to the Scrum Alliance and containing instructions on how to register/activate
+                my membership
+              </p>
+            </div>
+            </p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class="w-[2rem] h-[2rem]">
+            <img src="Assets/UserAssignee1.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class=' flex justify-center items-center'>
+          <select>
+            <option>
+              <div>In review</div>
+            </option>
+            <option>To Do</option>
+            <option>Done</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <p class="text-[#475569] text-[0.875rem]">Mar 15</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center"> <img src="Assets//TimeSchedule.svg"></img></div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class='mr-[0.25rem]'>
+            <img src="Assets/StarCircle.svg"></img>
+          </div>
+          <div class="text-[#475569] text-[0.875rem]">5</div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center"> <img src="Assets/flagWhite.svg"></img></div>
+      </td>
+    </tr>
+    <tr class="bg-[#FFFFFF] border-b border-[#E2E8F0] py-[0.75rem] px-[1.25rem]">
+      <td>
+        <div class='flex justify-center '>
+          <div class=" ml-[0.958rem]">
+            <!-- <img src="Assets/circle.svg"></img> -->
+          </div>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/ArrowRight.svg"></img> -->
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <img src="Assets/IssueTypesRed.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td class="text-[#475569] font-normal text-[0.875rem]">
+        <div class="flex justify-start items-center">
+          <div class="mr-[0.375rem]">
+            <p class="">
+            <div class="">
+              <p class="w-[29rem]">As a new Certified ScrumMaster, once my name has been loaded to the registry I am
+                sent an email welcoming me to the Scrum Alliance and containing instructions on how to register/activate
+                my membership
+              </p>
+            </div>
+            </p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class="w-[2rem] h-[2rem]">
+            <img src="Assets/UserAssignee1.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class=' flex justify-center items-center'>
+          <select>
+            <option>
+              <div>In review</div>
+            </option>
+            <option>To Do</option>
+            <option>Done</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <p class="text-[#475569] text-[0.875rem]">Mar 15</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center"> <img src="Assets//TimeSchedule.svg"></img></div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class='mr-[0.25rem]'>
+            <img src="Assets/StarCircle.svg"></img>
+          </div>
+          <div class="text-[#475569] text-[0.875rem]">5</div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center"> <img src="Assets/flagWhite.svg"></img></div>
+      </td>
+    </tr>
+    <tr class="bg-[#FFFFFF] border-b border-[#E2E8F0]">
+      <td>
+        <div class='flex justify-center '>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/circle.svg"></img> -->
+          </div>
+          <div class="ml-[0.958rem]">
+            <!-- <img src="Assets/ArrowRight.svg"></img> -->
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <img src="Assets/IssueTypesRed.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td class="text-[#475569] font-normal text-[0.875rem]">
+        <div class="flex justify-start items-center">
+          <div class="mr-[0.375rem]">
+            <p class="">
+            <div class="">
+              <p class="w-[29rem]">As a new Certified ScrumMaster, once my name has been loaded to the registry I am
+                sent an email welcoming me to the Scrum Alliance and containing instructions on how to register/activate
+                my membership
+              </p>
+            </div>
+            </p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class="w-[2rem] h-[2rem]">
+            <img src="Assets/UserAssignee1.svg"></img>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class=' flex justify-center items-center'>
+          <select>
+            <option>
+              <div>In review</div>
+            </option>
+            <option>To Do</option>
+            <option>Done</option>
+          </select>
+        </div>
+      </td>
+      <td>
+        <div class='flex justify-center items-center'>
+          <div class="">
+            <p class="text-[#475569] text-[0.875rem]">Mar 15</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center"> <img src="Assets//TimeSchedule.svg"></img></div>
+      </td>
+      <td>
+        <div class="flex justify-center items-center">
+          <div class='mr-[0.25rem]'>
+            <img src="Assets/StarCircle.svg"></img>
+          </div>
+          <div class="text-[#475569] text-[0.875rem]">5</div>
+        </div>
+      </td>
+      <td>
+        <div class="flex justify-center"> <img src="Assets/flagWhite.svg"></img></div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
